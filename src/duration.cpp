@@ -5,12 +5,14 @@
 
 
 // Constructors
+// Initialize time to 0
 Duration::Duration () {
     time = 0;
     alarm = -1;
     alarmHasBeenSet = false;
 }
 
+// Initialize time to t
 Duration::Duration (int t) {
     assert (t >= 0);
     time = t;
